@@ -20,7 +20,7 @@ BEGIN
       FROM `cte`
       WHERE `ind` < JSON_LENGTH(`json`) - 1
   )  
-  SELECT `key`, `value` FROM `cte` WHERE ind != -1;
+  SELECT `key`, `value` FROM `cte` WHERE `ind` != -1;
   
 END//
 
